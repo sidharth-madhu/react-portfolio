@@ -1,0 +1,37 @@
+.hero-img {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img::before{
+    content: "";
+    background: url("https://cdn.stackoverflow.co/images/jo7n4k8s/production/3cae59193aed19c16294278d599b8202c65d0b0a-2005x774.jpg?rect=266,0,1474,774&w=1200&h=630&auto=format&dpr=2");
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;   
+}
+
+.hero-img{
+    font-size: 2.4rem;
+}
+
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
